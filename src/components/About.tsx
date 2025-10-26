@@ -109,7 +109,9 @@ const About = () => {
         initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className={`flex justify-center w-full md:w-1/2 h-[500px] -mt-80 md:-mt-96 order-1 ${index % 2 !== 0 ? 'md:order-2' : ''}`}
+        className={`flex justify-center w-full md:w-1/2 h-[500px] 
+  -mt-[40rem] sm:-mt-[44rem] md:-mt-96 order-1 
+  ${index % 2 !== 0 ? 'md:order-2' : ''}`}
       >
         <div className="relative w-full max-w-[280px] h-full">
           <div 

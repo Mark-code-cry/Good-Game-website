@@ -16,7 +16,8 @@ behavior: "smooth",
 
 return (
 <section 
-  className="relative text-white py-12 bg-[#222222] overflow-hidden" 
+  className="         relative text-white py-12 bg-[#222222] overflow-hidden
+    -mt-36 sm:-mt-48 md:-mt-60 lg:mt-0" 
 >
 <div 
   className="container mx-auto relative px-2"

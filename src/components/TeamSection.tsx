@@ -130,7 +130,8 @@ className="bg-[#0d1113] border border-[#00bcd4]/40 rounded-2xl overflow-hidden s
 
 
 return (
-<section className="min-h-screen flex flex-col justify-center bg-gradient-to-b from-[#222222] to-[#222222] text-white py-8 overflow-hidden">
+<section className="min-h-screen flex flex-col justify-center bg-gradient-to-b from-[#222222] to-[#222222] text-white py-8
+  -mt-72 sm:-mt-80 md:-mt-96 lg:mt-0 xl:mt-0">
 <div className="container mx-auto px-4 text-center">
 <motion.h2
 initial={{ opacity: 0, y: -30 }}

@@ -85,10 +85,7 @@ const HeroSection = () => {
     <Button
       onClick={handleDownload}
       className="
-        bg-[#222222]/90 text-[#fefefe] font-semibold
-        px-8 h-14 rounded-xl hover:bg-[#26EEEB]
-        hover:text-black border border-[#26EEEB]
-        transition-all duration-300
+       bg-[#26EEEB] text-black font-semibold px-4 h-10 rounded-xl hover:bg-[#22d3d0] transition-all duration-300
       "
     >
       Download Now
@@ -103,7 +100,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="order-2 lg:order-2"
+          className="       order-2 lg:order-2 
+    flex justify-center 
+    transform 
+    -mt-40 sm:-mt-52 md:-mt-64 lg:-mt-28 xl:-mt-16 2xl:-mt-8
+  "
         >
           <PhoneMockups />
         </motion.div>

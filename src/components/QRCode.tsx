@@ -60,7 +60,7 @@ const QRCode = () => {
           </p>
 
           <Button
-            className="mt-6 bg-[#26EEEB] text-black font-semibold px-6 py-3 rounded-lg hover:bg-[#22d3d0] transition-all duration-300"
+            className="mt-6 bg-[#26EEEB] text-black font-semibold px-4 h-10 rounded-xl hover:bg-[#22d3d0] transition-all duration-300"
             onClick={() =>
               window.open(
                 "https://www.mediafire.com/file/tfjy8ecz09zqbe2/app-release.apk/file",
@@ -68,7 +68,7 @@ const QRCode = () => {
               )
             }
           >
-            Download App
+            Download Now
           </Button>
         </motion.div>
       </div>
