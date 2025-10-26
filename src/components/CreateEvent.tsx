@@ -29,46 +29,36 @@ title: "Open Registration",
 desc: "Share your sign-up link and let teams rally in. The league starts here.",
 },
 ];
-
 const CreateEvent = () => {
 const [current, setCurrent] = useState(0);
 const intervalRef = useRef(null);
-
 const goNext = () => {
 setCurrent((prev) => (prev + 1) % steps.length);
-restartInterval(); 
+restartInterval();
 };
-
 useEffect(() => {
 startInterval();
 return () => clearInterval(intervalRef.current);
 }, []);
-
 const startInterval = () => {
 intervalRef.current = setInterval(() => {
 setCurrent((prev) => (prev + 1) % steps.length);
 }, 3000);
 };
-
 const restartInterval = () => {
 clearInterval(intervalRef.current);
 startInterval();
 };
-
 return (
 <section className="relative w-full min-h-screen overflow-hidden text-white bg-[#222222] py-16 md:py-0">
-
 <div className=""></div>
-
 <div className="container mx-auto px-6 relative z-10 flex flex-col-reverse md:flex-row items-center justify-center min-h-screen gap-12 md:gap-16 pt-16 md:pt-0">
-
 <div className="flex justify-center w-full md:w-1/2 h-[400px] md:h-[500px] order-1">
-<div className="relative w-full max-w-[280px] h-full"> 
+<div className="relative w-full max-w-[280px] h-full">
 <AnimatePresence>
 {steps.map((step, index) => {
 const position = (index - current + steps.length) % steps.length;
 if (position > 2) return null;
-
 return (
 <motion.div
 key={index}
@@ -93,14 +83,12 @@ delay: index * 0.3,
 >
 <div className="flex justify-center">{step.icon}</div>
 </motion.div>
-
 <div className="mt-8 text-center">
 <h3 className="text-lg font-semibold text-[#26eeeb] mb-2">
 {step.title}
 </h3>
 <p className="text-gray-400 text-sm">{step.desc}</p>
 </div>
-
 <motion.button
 onClick={goNext}
 whileHover={{ scale: 1.1 }}
@@ -115,7 +103,6 @@ Next
 </AnimatePresence>
 </div>
 </div>
-
 <div className="w-full md:w-1/2 text-center md:text-right order-2">
 <motion.h2
 initial={{ opacity: 0, y: -30 }}
@@ -125,7 +112,6 @@ className="text-[35px] font-bold mb-4 text-[#26eeeb]"
 >
 Create Open League Events
 </motion.h2>
-
 <motion.p
 initial={{ opacity: 0 }}
 animate={{ opacity: 1 }}
@@ -142,3 +128,5 @@ event to sharing your registration link everything starts here.
 };
 
 export default CreateEvent;
+
+
