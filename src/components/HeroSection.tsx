@@ -85,7 +85,7 @@ gap-6 mt-8 text-center lg:text-left
 <Button
 onClick={handleDownload}
 className="
-bg-[#26EEEB] text-black font-semibold px-4 h-10 rounded-xl hover:bg-[#22d3d0] transition-all duration-300
+bg-[#26EEEB] text-black font-semibold px-4 h-10 rounded-[30px] hover:bg-[#22d3d0] transition-all duration-300
 "
 >
 Download Now

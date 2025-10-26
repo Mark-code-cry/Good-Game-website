@@ -77,7 +77,7 @@
   <div className="bg-[#222222] text-white overflow-hidden">
   <Navigation />
 
-  <section className="min-h-[80vh] flex flex-col justify-start items-center text-center bg-[#222222] relative pt-24">
+  <section className="min-h-[80vh] flex flex-col justify-start md:justify-center items-center text-center bg-[#222222] relative pt-20 md:pt-30">
   <motion.h2
   initial={{ opacity: 0, y: -30 }}
   whileInView={{ opacity: 1, y: 0 }}
