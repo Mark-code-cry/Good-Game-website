@@ -80,14 +80,7 @@ const HeroSection = () => {
   "
 >
   <div className="flex flex-col items-center lg:items-start space-y-4">
-    <p className="text-white text-[13px] text-center lg:text-left leading-relaxed">
-      <span className="font-bold text-[15px]">
-        How to download the GG app, <br />
-      </span>
-      Tap the <span className="font-bold">"Download App"</span> button <br />
-      or
-      <span className="font-bold text-[#26eeeb]"> Scan the QR code.</span>
-    </p>
+  
 
     <Button
       onClick={handleDownload}
@@ -98,41 +91,10 @@ const HeroSection = () => {
         transition-all duration-300
       "
     >
-      Download App
+      Download Now
     </Button>
 
-    <div className="flex flex-col items-center mt-6 lg:hidden">
-      <img
-        src="/qr1.png"
-        alt="QR Code"
-        className="
-          w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36
-          rounded-lg shadow-lg border border-[#26EEEB]/30
-        "
-      />
-      <p className="text-gray-400 text-xs mt-2">Scan on Android</p>
     </div>
-  </div>
-
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}
-    className="hidden lg:flex flex-col items-center justify-start"
-  >
-    
-    <motion.img
-      src="/qr1.png"
-      alt="QR Code"
-      className="
-        w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36
-        rounded-lg shadow-lg border border-[#26EEEB]/30
-      "
-      
-      transition={{ type: 'spring', stiffness: 250 }}
-    />
-      <p className="text-gray-400 text-xs mt-2">Scan on Android</p>
-    </motion.div>
   </div>
 
 </motion.div>
