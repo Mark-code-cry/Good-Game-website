@@ -5,6 +5,7 @@ import CreateEvent from "@/components/CreateEvent";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
+import QRCode from "@/components/QRCode"
 
 
 const Index = () => {
@@ -16,7 +17,9 @@ const Index = () => {
       <CreateEvent/>
       <About />
       <TeamSection />
+      <QRCode />
       <Footer />
+
 
     </div>
   );
