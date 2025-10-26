@@ -5,7 +5,6 @@ const QRCode = () => {
   return (
     <section className="min-h-screen bg-[#222222] text-white flex flex-col justify-center items-center py-12 px-6">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left Side - Steps */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -43,7 +42,6 @@ const QRCode = () => {
           </ol>
         </motion.div>
 
-        {/* Right Side - QR Code */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
