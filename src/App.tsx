@@ -36,11 +36,9 @@ console.warn("DevTools detected!");
 }
 }, 1000);
 
-// Add listeners
 document.addEventListener("contextmenu", handleContextMenu);
 document.addEventListener("keydown", handleKeyDown);
 
-// Cleanup
 return () => {
 document.removeEventListener("contextmenu", handleContextMenu);
 document.removeEventListener("keydown", handleKeyDown);
