@@ -7,7 +7,7 @@ const QRCode = () => {
   const [progress, setProgress] = useState(0);
 
   const fileUrl =
-    "https://dl.dropboxusercontent.com/scl/fi/5fvqjaztdyie3j65ak62j/GG_App.apk?rlkey=tyesfshf956l5b0m4x4hty1pd&st=kvqpc5ou";
+    "https://dl.dropboxusercontent.com/scl/fi/5fvqjaztdyie3j65ak62j/GG_App.apk?rlkey=tyesfshf956l5b0m4x4hty1pd&st=3v7yufig";
 
   const handleDownload = () => {
     setIsDownloading(true);
@@ -90,12 +90,12 @@ const QRCode = () => {
           className="flex flex-col items-center justify-center lg:order-2 lg:self-end"
         >
           <a
-            href="/gg.png"
+            href="/qr.png"
             download="GG_QRCode.png"
             className="rounded-xl p-4 bg-[#222222] hover:scale-105 transition-transform duration-300"
           >
             <img
-              src="/gg.png"
+              src="/qr.png"
               alt="QR Code"
               className="w-40 h-40 md:w-48 md:h-48 rounded-md cursor-pointer"
             />
