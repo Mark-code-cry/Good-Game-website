@@ -7,7 +7,7 @@ const QRCode = () => {
   const [progress, setProgress] = useState(0);
 
   const fileUrl =
-    "https://www.dropbox.com/scl/fi/5fvqjaztdyie3j65ak62j/GG_App.apk?rlkey=tyesfshf956l5b0m4x4hty1pd&st=kvqpc5ou&dl=1";
+    "https://dl.dropboxusercontent.com/scl/fi/5fvqjaztdyie3j65ak62j/GG_App.apk?rlkey=tyesfshf956l5b0m4x4hty1pd&st=kvqpc5ou";
 
   const handleDownload = () => {
     setIsDownloading(true);
