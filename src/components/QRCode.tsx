@@ -42,15 +42,12 @@ const QRCode = () => {
             ))}
           </ol>
         </motion.div>
-
-        {/* QR Code + Button Section */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           className="flex flex-col items-center justify-center lg:order-2 lg:self-end"
         >
-          {/* Downloadable QR Code */}
           <a
             href="/gg.png"
             download="GG_QRCode.png"

@@ -11,7 +11,7 @@ const [progress, setProgress] = useState(0);
 const { toast } = useToast();
 
 const fileUrl =
-"https://www.mediafire.com/file/tfjy8ecz09zqbe2/app-release.apk/file";
+"https://www.dropbox.com/scl/fi/5fvqjaztdyie3j65ak62j/GG_App.apk?rlkey=tyesfshf956l5b0m4x4hty1pd&st=kvqpc5ou&dl=1";
 
 const handleDownload = () => {
 setIsDownloading(true);
