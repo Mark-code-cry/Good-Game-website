@@ -52,12 +52,12 @@ const QRCode = () => {
         >
           {/* Downloadable QR Code */}
           <a
-            href="/qr1.png"
+            href="/gg.png"
             download="GG_QRCode.png"
             className="rounded-xl p-4 bg-[#222222] hover:scale-105 transition-transform duration-300"
           >
             <img
-              src="/qr1.png"
+              src="/gg.png"
               alt="QR Code"
               className="w-40 h-40 md:w-48 md:h-48 rounded-md cursor-pointer"
             />
@@ -71,7 +71,7 @@ const QRCode = () => {
             className="mt-6 bg-[#26EEEB] text-black font-semibold px-4 h-10 rounded-[30px] hover:bg-[#22d3d0] transition-all duration-300"
             onClick={() =>
               window.open(
-                "https://www.mediafire.com/file/tfjy8ecz09zqbe2/app-release.apk/file",
+                "https://www.dropbox.com/scl/fi/5fvqjaztdyie3j65ak62j/GG_App.apk?rlkey=tyesfshf956l5b0m4x4hty1pd&st=kvqpc5ou&dl=1",
                 "_blank"
               )
             }
