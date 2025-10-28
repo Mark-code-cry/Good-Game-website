@@ -7,7 +7,7 @@ const QRCode = () => {
   const [progress, setProgress] = useState(0);
 
   const fileUrl =
-    "https://dl.dropboxusercontent.com/scl/fi/5fvqjaztdyie3j65ak62j/GG_App.apk?rlkey=tyesfshf956l5b0m4x4hty1pd&st=3v7yufig";
+    "https://drive.google.com/file/d/1mdNKPggwKy5FRgbd0nuPsfPS0RIa-nn3/view?usp=sharing";
 
   const handleDownload = () => {
     setIsDownloading(true);
@@ -67,7 +67,7 @@ const QRCode = () => {
               "Select Special access → Install unknown apps.",
               "Enable permission for apps like My Files, Chrome, or any browser.",
               "Open My Files and go to Recent files.",
-              "Tap GoodGame.apk to install the app.",
+              "Tap GG_App.apk to install the app.",
               "Enjoy exploring sports events with GG!",
             ].map((step, index) => (
               <li
@@ -90,12 +90,12 @@ const QRCode = () => {
           className="flex flex-col items-center justify-center lg:order-2 lg:self-end"
         >
           <a
-            href="/qr.png"
+            href="/ggqr copy.jpg"
             download="GG_QRCode.png"
             className="rounded-xl p-4 bg-[#222222] hover:scale-105 transition-transform duration-300"
           >
             <img
-              src="/qr.png"
+              src="/ggqr copy.jpg"
               alt="QR Code"
               className="w-40 h-40 md:w-48 md:h-48 rounded-md cursor-pointer"
             />

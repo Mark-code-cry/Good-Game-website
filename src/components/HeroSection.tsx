@@ -11,7 +11,7 @@ const [progress, setProgress] = useState(0);
 const { toast } = useToast();
 
 const fileUrl =
-"https://dl.dropboxusercontent.com/scl/fi/5fvqjaztdyie3j65ak62j/GG_App.apk?rlkey=tyesfshf956l5b0m4x4hty1pd&st=3v7yufig";
+ "https://drive.google.com/file/d/1mdNKPggwKy5FRgbd0nuPsfPS0RIa-nn3/view?usp=sharing";
 
 const handleDownload = () => {
 setIsDownloading(true);
